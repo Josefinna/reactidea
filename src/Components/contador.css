@@ -1,0 +1,10 @@
+.container-contador{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    /* background-color: chartreuse; */
+    width: 400px;
+    font-style: normal;
+    font-family: 'Muli';
+    color: #6E4A2A;
+}

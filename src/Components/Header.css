@@ -1,0 +1,42 @@
+.header-principal{
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:#A8D1D1;
+    font-family: 'Muli';
+    font-size: small;
+    color:rgb(220, 20, 197);
+}
+.upHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70px;
+    background-color: #A8D1D1;
+}
+
+.downHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.downHeader button{
+    color: #ffffff;
+    font-size: larger;
+    /* font-weight:bold; */
+}
+.logo{
+    background-image: url('../imágenes/logo1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 220px;
+    height: 100px;
+}
+button{
+    background-color:transparent;
+    border: black;
+    box-shadow: none;
+    font-family: 'Muli';
+}

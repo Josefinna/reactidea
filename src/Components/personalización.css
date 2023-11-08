@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli';
+}
+.todo {
+    display: flex;
+    justify-content: center;
+}
+.container-ventana{ 
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:#ffffff;
+    width: 80%;
+    height: 30%;
+}
+.boton-bordado {
+    background-color: #F7ECEB;
+    color: #6c6a6a62;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.imgmasprod {
+    display: flex;
+    flex-direction: row;
+}
+.imagen-prod{
+    background-image: url('../imágenes/toalla-rosa.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 700px;
+}
+.especificación-prod {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.estrellitas{
+    background-image: url('../imágenes/estrellas.png');
+    width: 200px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.colores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+.Rosa{
+    background-image: url('../imágenes/rosa.webp') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.Blanco{
+    background-image: url('../imágenes/blanca.webp') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.Gris{
+    background-image: url('../imágenes/gris.webp') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.Verde{
+    background-image: url('../imágenes/verde.webp') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-image: url('../imágenes/toalla-fondo.jpeg');
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor del grid */
+    background-position: center;
+    grid-gap: 1px;
+    width: 400px; 
+    height: 600px;
+  }
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    align-self:flex-start;
+    background-color: rgb(133, 73, 197);
+    margin: 20px;
+}
+
+.grid-and-button {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    padding: 20px; /* Aumenta el espacio interno entre el grid y el botón */
+}
+.grid-and-button input {
+    margin-top: 20px; /* Agrega margen superior al botón */
+}
+.title-container {
+    margin-top: 20px; /* Agrega margen superior para separar el título del contenido anterior */
+    text-align: right; /* Alinea el título a la derecha */
+    margin-left: 150px;
+    color:rgb(255, 255, 255);
+}
+.cell {
+    width: 100%;
+    height:100%;
+    background-size: 100% 100%;
+    background-position: center;
+    transition: background-position 0.2s;
+    border: 1px solid rgba(19, 145, 230, 0.562);
+    cursor: pointer;
+}
+
+.cell.selected {
+    background-position: center;
+}
