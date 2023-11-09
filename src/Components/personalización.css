@@ -95,10 +95,46 @@ body{
 
 .grid-container {
     display: flex;
+    /* justify-content: left;
     flex-direction: row;
-    align-self:flex-start;
-    background-color: rgb(133, 73, 197);
+    align-items: center; */
+    /* background-color: rgb(148, 197, 73); */
     margin: 20px;
+}
+.tramitar-pedido {
+    border-radius: 10px;
+    background: #FEC5BB;
+    width: 270px;
+    height: 72px;
+    flex-shrink: 0;
+    color: #6E4A2A;
+    font-family: Muli;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.titulo-seccion {
+    text-align: left;
+    margin: 4;
+    color: #A8D1D1;
+    font-weight: 700;
+    font-size:40px;
+}
+.subtitulo {
+    /* text-align: left;
+    margin: 10px 0;
+    font-size: large;
+    color: #ffffff; */
+    color: #8E9199;
+    font-family: Muli;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
 }
 
 .grid-and-button {
@@ -110,6 +146,10 @@ body{
 }
 .grid-and-button input {
     margin-top: 20px; /* Agrega margen superior al botón */
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 .title-container {
     margin-top: 20px; /* Agrega margen superior para separar el título del contenido anterior */
@@ -117,14 +157,39 @@ body{
     margin-left: 150px;
     color:rgb(255, 255, 255);
 }
+.botoncito {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.escribe {
+   text-align: left;
+    color: #A8D1D1;
+    font-family: Muli;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.explicacion {
+    color: #8E9199;
+    font-family: Muli;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+
 .cell {
     width: 100%;
     height:100%;
     background-size: 100% 100%;
     background-position: center;
     transition: background-position 0.2s;
-    border: 1px solid rgba(19, 145, 230, 0.562);
-    cursor: pointer;
+    border: 1px solid #d1a8b3ad;
+    cursor:cell;
 }
 
 .cell.selected {

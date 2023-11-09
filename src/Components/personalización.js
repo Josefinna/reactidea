@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './personalización.css'
 import Contador from './contador';
+import TextBox from './textBox';
 
 const GridBordado = () => {
     // Define dos estados con el hook useState
@@ -51,13 +52,20 @@ const GridBordado = () => {
           ))}
         </div>
         {/* Input para cargar una imagen */}
-        <input type="file" accept="image/*" onChange={handleImageUpload} />
+        {/* <input className='botoncito' type="file" accept="image/*" onChange={handleImageUpload} /> */}
       </div>
       {/* Contenedor para el título con la clase "title-container" */}
-      <div className="title-container">
+      <div className="titulo-container">
         {/* Título del componente */}
-        <h2>Customización Bordado</h2>
-        <p>Carga la imagen y posiciónala sobre la toalla</p>
+        <h2 className='titulo-seccion'>Customización bordado</h2>
+        <p className='subtitulo'>Selecciona el bordado desde tus archivos y luego colócalo sobre la toalla en el cuadrante que deseas que vaya el bordado.</p>
+        <input className='botoncito' type="file" accept="image/*" onChange={handleImageUpload} />
+        <h2 className='escribe'>Agrega texto</h2>
+        <p className='explicacion'>Si deseas agregar texto al bordado, puedes hacerlo en esta sección.</p>
+        <TextBox/>
+        <button className='tramitar-pedido'>TRAMITAR PEDIDO</button>
+
+
       </div>
     </div>
   );
@@ -97,7 +105,7 @@ const Personalizar = () => {
                <Contador/>
                </div>
                </div>
-                <button className='boton-bordado' onClick={toggleGridBordado}>Tu bordado aquí</button>
+                <button className='boton-bordado' onClick={toggleGridBordado}>Agrega tu bordado aquí</button>
                 {showGridBordado && <GridBordado/>}
             </div>
             </div>
